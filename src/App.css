@@ -166,11 +166,11 @@ body {
     width: 100%;
     padding: 15px;
     gap: 10px;
-    height: 250px;
+    height: 350px;
   }
 
   .card img {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
 
@@ -192,7 +192,7 @@ body {
 .card h3 {
   color: #ffc4e1;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 .card p {
