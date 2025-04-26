@@ -166,7 +166,7 @@ body {
     width: 100%;
     padding: 15px;
     gap: 10px;
-    height: auto;
+    height: 50px;
   }
 
   .card img {
