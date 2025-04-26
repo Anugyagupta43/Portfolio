@@ -130,7 +130,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero-section {
-    height: 350px; /* Smaller height for small screens */
+    height: 400px; /* Smaller height for small screens */
     background-position: center top;
     background-size: cover;
   }
@@ -166,7 +166,7 @@ body {
     width: 100%;
     padding: 15px;
     gap: 10px;
-    height: 100px;
+    height: 200px;
   }
 
   .card img {
