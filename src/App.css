@@ -46,7 +46,7 @@ body {
 
 .social-card p {
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .role {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color:  	#ffc4e1;
   min-height: 2rem; /* to avoid layout jump */
   font-family: 'Playfair Display', serif;
@@ -106,8 +106,7 @@ body {
 }
 .card {
   display: flex; /* Flexbox layout for side-by-side positioning */
-  background:rgba(31, 31, 31, 0.6)
-  ;
+  background:rgba(31, 31, 31, 0.6);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -124,10 +123,60 @@ body {
 }
 
 .card img {
-  width: 500px;
-  height: 350px;
+  width: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 350px; /* Smaller height for small screens */
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .stack span {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .card img {
+    width: 50%;
+    height: auto;
+  }
+
+  .card .content {
+    margin-left: 10px;
+    width: 50%;
+  }
 }
 
 .card .content {
@@ -142,13 +191,13 @@ body {
 .card h3 {
   color: #ffc4e1;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .card p {
   color: #fff;
   font-size: 17px;
-  line-height: 1.5; /* Makes the text more readable */
+  line-height: 1.3; /* Makes the text more readable */
   max-width: 500px; /* Optional: Set a max width for better text alignment */
 }
 
@@ -159,22 +208,3 @@ body {
   margin-top: 5px;
 }
 
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 24px;
-  }
-
-  .stack span {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .projects {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-}

@@ -29,8 +29,8 @@ function App() {
   }, [displayedText, isDeleting, roleIndex]);
 
   const webProjects = [
-    { title: "Virtual Fashion Advisor", desc: "A smart, web-based application that provides personalized fashion suggestions by analyzing user preferences, behavior, and trending fashion data. It enhances the online shopping experience with intelligent recommendations and seamless integration with e-commerce and social media platforms.", img: "image.png", link: "https://github.com/Anugyagupta43/fashion-adviser" },
-    { title: "AgroLink", desc: "Agrolink is a dynamic web platform designed to bridge the gap between farmers and buyers, offering a seamless experience to sell and purchase fresh produce. Built with an intuitive interface and rich features, Agrolink empowers farmers to reach a larger audience while giving buyers access to quality crops. The platform also provides tools to assist farmers in making informed decisions about crop cultivation.", img: "agrolink.png", link: "https://github.com/Anugyagupta43/agro-link" },
+    { title: "Virtual Fashion Advisor", desc: "A smart, full stack application integrating machine learning that provides personalized fashion suggestions by analyzing user preferences, behavior, and trending fashion data.", img: "image.png", link: "https://github.com/Anugyagupta43/fashion-adviser" },
+    { title: "AgroLink", desc: "Agrolink is a MERN stack platform designed to bridge the gap between farmers and buyers, offering a seamless experience to sell and purchase fresh produce. The platform also provides tools to assist farmers in making informed decisions about crop cultivation.", img: "agrolink.png", link: "https://github.com/Anugyagupta43/agro-link" },
   ];
 
   const analyticProjects = [
