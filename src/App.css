@@ -166,7 +166,7 @@ body {
     width: 100%;
     padding: 15px;
     gap: 10px;
-    height: 200px;
+    height: 250px;
   }
 
   .card img {
@@ -192,7 +192,7 @@ body {
 .card h3 {
   color: #ffc4e1;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .card p {
