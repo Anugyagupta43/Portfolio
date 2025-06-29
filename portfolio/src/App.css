@@ -91,7 +91,7 @@ body.dark-theme .card p {
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
-  z-index: 200;
+  z-index: 300;
   padding: 0;
   overflow: hidden;
 }
@@ -157,6 +157,7 @@ body.dark-theme {
   min-height: 350px;
   position: relative;
 }
+
 
 @media (max-width: 900px) {
   .hero-section {
@@ -473,4 +474,452 @@ h2 {
   font-size: 2rem;
   color: #ff4081;
   margin-bottom: 1rem;
+}
+
+/* Navbar see-thru */
+.navbar {
+  width: 100vw;
+  background: rgba(255, 251, 231, 0.85);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 0.7rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 201;
+  backdrop-filter: blur(8px);
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4081;
+  text-decoration: none;
+  letter-spacing: 2px;
+  min-width: 48px;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-links a {
+  color: #7c4dff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #ff4081;
+}
+.navbar.dark {
+  background: rgba(35, 25, 66, 0.85);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.navbar.dark .nav-logo {
+  color: #ff6fcb;
+}
+.navbar.dark .nav-links a {
+  color: #ea6acb;
+}
+.navbar.dark .nav-links a:hover {
+  color: #7c4dff;
+}
+
+/* Add top padding to .App for navbar */
+.App {
+  padding-top: 64px;
+}
+
+/* Experience section styled like .projects but no image */
+.experience-projects {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.experience-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  min-width: 320px;
+  min-height: 120px;
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border: 4px dotted #b388ff;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.experience-card .content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  box-sizing: border-box;
+}
+.experience-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #7c4dff;
+}
+.exp-role {
+  font-size: 1.1rem;
+  color: #ff4081;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.exp-time {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.experience-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+body.dark-theme .experience-card {
+  background: #201a36;
+  border: 4px dotted #7c4dff;
+  color: #f3e8ff;
+}
+body.dark-theme .experience-card h3 {
+  color: #ff6fcb;
+}
+body.dark-theme .exp-role {
+  color: #ea6acb;
+}
+body.dark-theme .experience-card p {
+  color: #bbaed1;
+}
+
+/* Hobbies section: two side-by-side boxes */
+.hobbies-row {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hobby-box {
+  flex: 1 1 350px;
+  background: #e0f7fa;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  min-width: 320px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poem-box {
+  max-width: 480px;
+}
+.books-box {
+  max-width: 480px;
+}
+body.dark-theme .hobby-box {
+  background: #1a1333;
+}
+
+/* Poem carousel styles */
+.poem-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.2rem 0 0.5rem 0;
+}
+.poem-carousel-img-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.poem-carousel-img {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  height: 300px;
+  min-height: 320px;
+  max-height: 320px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(124,77,255,0.10);
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  object-fit: cover;
+  object-position: center;
+  background: #eee;
+}
+.poem-carousel-img-wrap:hover .poem-carousel-img {
+  box-shadow: 0 4px 24px rgba(124,77,255,0.18);
+  transform: scale(1.03);
+}
+.poem-title {
+  font-size: 1.1rem;
+  color: #7c4dff;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+.carousel-arrow {
+  background: #fffbe7;
+  border: none;
+  font-size: 2rem;
+  color: #7c4dff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124,77,255,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.carousel-arrow:hover {
+  background: #ff80ab;
+  color: #fff;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 0.7rem;
+}
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b388ff;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.carousel-dot.active {
+  background: #7c4dff;
+  transform: scale(1.2);
+}
+body.dark-theme .poem-carousel-img {
+  background: #231942;
+}
+body.dark-theme .poem-title {
+  color: #ff6fcb;
+}
+body.dark-theme .carousel-arrow {
+  background: #231942;
+  color: #ea6acb;
+}
+body.dark-theme .carousel-arrow:hover {
+  background: #ea6acb;
+  color: #231942;
+}
+body.dark-theme .carousel-dot {
+  background: #7c4dff;
+}
+body.dark-theme .carousel-dot.active {
+  background: #ea6acb;
+}
+
+/* Modal for expanded poem image */
+.poem-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 20, 50, 0.85);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeIn 0.2s;
+}
+.poem-modal-img {
+  max-width: 98vw;
+  max-height: 98vh;
+  width: auto;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(124,77,255,0.25);
+  background: #fff;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+body.dark-theme .poem-modal-overlay {
+  background: rgba(10, 5, 30, 0.95);
+}
+body.dark-theme .poem-modal-img {
+  background: #231942;
+}
+
+/* Books list */
+.book-list {
+  list-style: disc inside;
+  padding-left: 0;
+  color: #333;
+  text-align: left;
+  margin: 0 auto 0 auto;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 2.2rem;
+}
+.book-list-item {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+body.dark-theme .book-list,
+body.dark-theme .book-list-item,
+body.dark-theme .poem-title,
+body.dark-theme .experience-card p {
+  color: #f8f8ff;
+}
+/* Remove carousel arrow styles since arrows are gone */
+.carousel-arrow { display: none !important; }
+
+/* Footer Contact Section */
+.footer-contact-section {
+  width: 100vw;
+  background: #f7f7ff;
+  text-align: center;
+  padding: 3.5rem 1rem 3rem 1rem;
+  margin-top: 4rem;
+  border-radius: 0;
+  box-shadow: 0 -2px 18px rgba(124,77,255,0.07);
+}
+.footer-contact-section h2 {
+  font-size: 2.3rem;
+  color: #7c4dff;
+  margin-bottom: 1.2rem;
+}
+.footer-contact-section .email-link {
+  color: #ff4081;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+.footer-contact-section .resume-btn {
+  background: #7c4dff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+}
+.footer-contact-section .resume-btn:hover {
+  background: #ff4081;
+  color: #fff;
+}
+body.dark-theme .footer-contact-section {
+  background: #201a36;
+  box-shadow: 0 -2px 18px rgba(124,77,255,0.13);
+}
+body.dark-theme .footer-contact-section h2 {
+  color: #ff6fcb;
+}
+body.dark-theme .footer-contact-section .email-link {
+  color: #ea6acb;
+}
+body.dark-theme .footer-contact-section .resume-btn {
+  background: #ea6acb;
+  color: #231942;
+}
+body.dark-theme .footer-contact-section .resume-btn:hover {
+  background: #7c4dff;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .hobbies-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hobby-box {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem 0.7rem;
+  }
+  .poem-carousel-img {
+    width: 98vw;
+    max-width: 98vw;
+    min-width: 0;
+    height: 240px;
+    min-height: 240px;
+    max-height: 240px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    background: #eee;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.books-box h3 {
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  body.dark-theme .card p,
+  body.dark-theme .experience-card p {
+    color: #111 !important;
+  }
+  .theme-toggle {
+    position: fixed;
+    top: 52px;
+    right: 0.7rem;
+    z-index: 400;
+    width: 56px;
+    height: 32px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 0.2rem;
+    font-size: 0.72rem;
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0 0.08rem;
+  }
 }
