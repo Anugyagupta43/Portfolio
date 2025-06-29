@@ -258,7 +258,7 @@ function App() {
       <footer className="footer-contact-section" id="contact">
         <h2>Contact Me</h2>
         <p style={{fontSize: '1.3rem'}}>Feel free to reach out via email:</p>
-        <a className="email-link" href="mailto:anugyagupta43@gmail.com" style={{fontSize: '1.3rem'}}>anugyagupta43@gmail.com</a>
+        <a className="email-link" href="mailto:anugyagupta043@gmail.com" style={{fontSize: '1.3rem'}}>anugyagupta043@gmail.com</a>
         <div style={{marginTop: '2rem'}}>
     
         </div>
