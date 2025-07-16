@@ -73,7 +73,14 @@ function App() {
   const analyticProjects = [
     { title: "Banking EDA", desc: "Exploratory Data Analysis (EDA) on a banking dataset using Python in Google Colab. The goal of this project is to uncover trends, patterns, and insights to better understand customer behavior and banking operations.", img: "eda.png", link: "https://colab.research.google.com/drive/1hM-9bY4d9hLU7XIV-ORNIq5gorntUwU9?usp=sharing", code: "https://github.com/Anugyagupta43/BankingSystem" },
 
-    {title: "Spotify Analysis", desc: "A data analysis project exploring user listening behavior on Spotify. Used Python, Pandas, and Matplotlib/Seaborn to analyze trends in track popularity, genre etc. This project dives into a dataset of 20,590 Spotify tracks to uncover powerful insights using SQL on pgAdmin.",img:"Spotify.png", link:"https://github.com/Anugyagupta43/Spotify-DA", code: "https://github.com/Anugyagupta43/Spotify-DA"},
+
+   {
+  title: "Plant Growth Stages Prediction",
+  desc: "Analyzed environmental and management data (370+ rows) to predict plant growth milestones using Power BI. Built interactive dashboards with decomposition trees, KPI cards, and visuals revealing that loam soil + daily watering + moderate temperature yields highest growth—boosting milestones by over 30%.",
+  img: "PlantGrowth.png",
+  link: "https://github.com/Anugyagupta43/Plant-Growth-Stages",
+  code: "https://github.com/Anugyagupta43/Plant-Growth-Stages"},
+
 
     {
       title: "Olympics 2024", desc: "This Power BI dashboard presents a comprehensive analysis of the Olympics 2024, focusing on 11,113 athlete participation, medal distribution, and performance by 206 country and gender. It provides interactive visuals and insights for a better understanding of the overall event statistics.", img:"olympics.png",link:"https://github.com/Anugyagupta43/Olympics-DA", code: "https://github.com/Anugyagupta43/Olympics-DA"
